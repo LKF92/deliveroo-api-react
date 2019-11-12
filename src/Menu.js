@@ -6,13 +6,13 @@ export default function Menu(props) {
   return (
     <ul className="menu-sections">
       {menuSections.map((menuSection, index) => {
-        return (
+        return props[menuSection].length > 0 ? (
           <MenuSection
             key={index}
             sectionTitle={menuSection}
             menu={props[menuSection]}
           />
-        );
+        ) : null;
       })}
     </ul>
   );
