@@ -7,11 +7,11 @@ export default function MenuSection(props) {
   return (
     <li className="menu-section">
       <h3 className="section-title">{sectionTitle}</h3>
-      <div className="meals-box">
+      <ul className="meals-box">
         {menu.map(meal => {
           return <Meal key={meal.id} {...meal} />;
         })}
-      </div>
+      </ul>
     </li>
   );
 }

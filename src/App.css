@@ -78,31 +78,30 @@ ul {
 }
 .meal-card {
   background-color: white;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
   padding: 10px;
   margin: 5px 0;
-  width: calc(50% - 30px);
+  width: calc(50% - 5px);
   height: 22vh;
 }
 .meal-info {
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   width: 60%;
-  padding-right: 5px;
+  padding-right: 10px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
 }
 .meal-title {
-  margin: 5px 0;
+  margin: 0;
   font-weight: 400;
   color: var(--black);
 }
 .meal-description {
   font-size: 12px;
-  margin: 0;
+  margin: 10px 0;
   color: var(--grey);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -121,4 +120,13 @@ ul {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+.meal-price {
+  color: var(--grey);
+}
+.populaire {
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 13px;
+  color: var(--orange);
 }
