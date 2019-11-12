@@ -3,6 +3,7 @@ import axios from "axios";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import Menu from "./Menu";
+import Cart from "./Cart";
 
 import "./App.css";
 
@@ -32,7 +33,10 @@ function App() {
             description={data.restaurant.description}
             picture={data.restaurant.picture}
           />
-          <Menu {...data.menu} />
+          <div className="menu">
+            <Menu {...data.menu} />
+            <Cart />
+          </div>
         </>
       )}
     </div>
