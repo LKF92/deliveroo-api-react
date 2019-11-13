@@ -2,15 +2,19 @@ import React from "react";
 import MenuSection from "./MenuSection";
 
 export default function Menu(props) {
-  const menuSections = Object.keys(props);
+  const { menu, addProduct, removeProduct, calculateTotal } = props;
+  const menuSections = Object.keys(menu);
   return (
     <ul className="menu-sections">
       {menuSections.map((menuSection, index) => {
-        return props[menuSection].length > 0 ? (
+        return menu[menuSection].length > 0 ? (
           <MenuSection
             key={index}
             sectionTitle={menuSection}
-            menu={props[menuSection]}
+            menu={menu[menuSection]}
+            addProduct={addProduct}
+            removeProduct={removeProduct}
+            calculateTotal={calculateTotal}
           />
         ) : null;
       })}

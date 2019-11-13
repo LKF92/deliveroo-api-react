@@ -1,9 +1,10 @@
 import React from "react";
 
 export default function Meal(props) {
-  const { id, title, description, price, picture, popular } = props;
+  const { meal, addProduct, removeProduct, calculateTotal } = props;
+  const { id, title, description, price, picture, popular } = meal;
   return (
-    <li className="meal-card">
+    <li className="meal-card" onClick={() => addProduct(meal)}>
       <div className="meal-info">
         <h4 className="meal-title">{title}</h4>
         <p className="meal-description">{description}</p>

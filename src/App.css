@@ -6,6 +6,7 @@
   --black: #2f3333;
   --orange: #ff8001;
   --blue: #00cdbc;
+  --dark-grey: #bac3c3;
 }
 body {
   background-color: white;
@@ -135,7 +136,6 @@ li {
   background-color: var(--light-grey);
   display: flex;
   flex-flow: row nowrap;
-  border: solid 1px red;
   padding: 30px 40px;
 }
 .cart {
@@ -146,10 +146,12 @@ li {
   background-color: white;
   box-shadow: 1px 1px 15px var(--grey);
   border-radius: 0.3125rem;
+
   padding: 0.625rem;
 }
 
 .validate-btn {
+  cursor: pointer;
   outline: none;
   font-size: 1rem;
   padding: 16px;
@@ -158,4 +160,54 @@ li {
   font-weight: bolder;
   background-color: var(--blue);
   border-radius: 5px;
+  border: none;
+}
+.cart__product-list {
+}
+
+/****** meals detail ******/
+.checkout-meal {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.quantity-buttons {
+  display: flex;
+  align-items: center;
+}
+.meal-quantity {
+  color: var(--grey);
+  margin: 0 5px;
+}
+.meal-title {
+  text-align: center;
+}
+.pre-total p {
+  margin: 7px 0;
+}
+.pre-total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/****** EMPTY CART *******/
+.blocked-btn {
+  cursor: not-allowed;
+  outline: none;
+  font-size: 1rem;
+  padding: 16px;
+  width: 100%;
+  color: white;
+  font-weight: bolder;
+  background-color: var(--dark-grey);
+  border-radius: 5px;
+  border: none;
+}
+.empty-cart-text {
+  text-align: center;
+  padding: 50px 0;
+  color: var(--grey);
 }
