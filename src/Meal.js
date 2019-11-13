@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function Meal(props) {
-  const { meal, addProduct, removeProduct, calculateTotal } = props;
-  const { id, title, description, price, picture, popular } = meal;
+  const { meal, addProduct } = props;
+  const { title, description, price, picture, popular } = meal;
   return (
     <li className="meal-card" onClick={() => addProduct(meal)}>
       <div className="meal-info">

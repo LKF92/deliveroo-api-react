@@ -30,7 +30,7 @@ export default function Cart(props) {
         <hr />
         <div className="pre-total">
           <p>Sous-total</p>
-          <p>{total}€</p>
+          <p>{total.toFixed(2)}€</p>
         </div>
         <div className="pre-total">
           <p>Frais de livraison</p>
@@ -39,7 +39,7 @@ export default function Cart(props) {
         <hr />
         <div className="pre-total">
           <h3>Total</h3>
-          <h3>{total + 2.5}€</h3>
+          <h3>{(total + 2.5).toFixed(2)}€</h3>
         </div>
       </div>
     );
