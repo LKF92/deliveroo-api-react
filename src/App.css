@@ -140,13 +140,14 @@ li {
 }
 .cart {
   position: sticky;
+  top: 20px;
+  margin-top: 19px;
   align-self: flex-start;
   box-sizing: border-box;
   min-width: 26vw;
   background-color: white;
   box-shadow: 1px 1px 15px var(--grey);
   border-radius: 0.3125rem;
-
   padding: 0.625rem;
 }
 
